@@ -1,0 +1,151 @@
+@font-face {
+  font-family: Dhanikans;
+  src: url(font.css/Dhanikans.ttf);
+}
+
+.carousel-inner>.carousel-item {
+  backface-visibility: visible;
+  perspective: 1000px;
+  transition: opacity 0.8s ease-in-out 0s;
+}
+
+.carousel-inner>.carousel-item.active.right, .carousel-inner>.carousel-item.next {
+  left: 0;
+  -webkit-transition: opacity 0.7s ease-in-out;
+  -moz-transition: opacity 0.7s ease-in-out;
+  -ms-transition: opacity 0.7s ease-in-out;
+  -o-transition: opacity 0.7s ease-in-out;
+  transition: opacity 0.7s ease-in-out;
+  opacity: 0;
+}
+
+.carousel-inner>.carousel-item.active.left, .carousel-inner>.carousel-item.prev {
+  left: 0;
+  -webkit-transition: opacity 0.7s ease-in-out;
+  -moz-transition: opacity 0.7s ease-in-out;
+  -ms-transition: opacity 0.7s ease-in-out;
+  -o-transition: opacity 0.7s ease-in-out;
+  transition: opacity 0.7s ease-in-out;
+  opacity: 0;
+}
+
+.carousel-inner>.carousel-item.active, .carousel-inner>.carousel-item.next.left, .carousel-inner>.carousel-item.prev.right {
+  left: 0;
+  opacity: 1;
+}
+
+.destination-header .navigation-d {
+  background-color: #FFF;
+  border-bottom: 1px solid #EFEFEF;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  width: 100%;
+  text-decoration: none;
+}
+
+ul.tab-bar {
+  display: inline-flex;
+  margin: 0;
+  text-align: left;
+}
+
+ul.tab-bar>li {
+  margin: 0 15px;
+}
+
+ul.tab-bar li a {
+  border-bottom: 1px solid transparent;
+  color: skyblue;
+  padding: 21px 0 22px;
+  text-decoration: none;
+}
+
+.number-d {
+  color: black;
+  float: right;
+  letter-spacing: 2px;
+  text-align: right;
+}
+
+#intro {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.ellipsis {
+  max-height: 300px;
+  word-wrap: break-word;
+  font-size: 0.7rem;
+}
+
+.review-published {
+  color: #b2b2b2;
+  font-size: 1rem;
+  margin: 0 0 8px;
+}
+
+
+#example_trips {
+  padding-top: 120px;
+  padding-bottom: 150px;
+}
+
+.underlined {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+
+.bg-grey {
+  background: #EFEFEF;
+  padding-bottom: 80px;
+}
+
+.card {
+  margin-top: 30px;
+}
+
+
+.section {
+  padding-top: 120px;
+}
+
+.team-quote {
+  margin: 0 0 50px;
+  overflow: hidden;
+}
+
+.team-quote p {
+  margin-top: 0;
+}
+
+.team-quote-author {
+  margin-top: 20px;
+}
+
+.rounded-circle {
+  border-radius: 100%;
+
+}
+
+.img-responsive {
+  height: auto;
+  max-width: 100%;
+  width: 5em;
+  display: block;
+}
+
+.team-name {
+    font-size: 3rem;
+    font-family: Dhanikans;
+}
+
+.team-role {
+  font-size: 1.5rem;
+  color: skyblue;
+  padding-left: 20px;
+}
