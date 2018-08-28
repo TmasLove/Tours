@@ -3,6 +3,12 @@
   src: url(font.css/Dhanikans.ttf);
 }
 
+.container-fluid::after, .container::after, .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .carousel-inner>.carousel-item {
   backface-visibility: visible;
   perspective: 1000px;
