@@ -7,6 +7,9 @@
 @font-face {
   font-family: Dhanikans;
   src: url(font.css/Dhanikans.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
 }
 
 .container-fluid::after, .container::after, .row::after {
@@ -94,6 +97,31 @@ ul.tab-bar li a {
   top: -50px;
 }
 
+.message-box-section .column {
+  background-color: #FFF;
+  height: 100%;
+  line-height: 30px;
+  margin: 0 auto 1.875rem;
+  max-width: 450px;
+  padding: 45px 30px;
+  text-align: center;
+}
+
+.message-box-section .column h3 {
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  line-height: 1.38;
+}
+
+.message-box-section .column p {
+  font-size: 18px;
+  line-height: 1.56;
+  margin: 0;
+  padding-top: 0;
+}
+
 .row-flex {
   display: flex;
   flex-wrap: wrap;
@@ -106,30 +134,7 @@ ul.tab-bar li a {
   flex-direction: column;
 }
 
-.message-box-section .column {
-  background-color: #FFF;
-  height: 100%;
-  line-height: 30px;
-  margin: 0 auto 1.875rem;
-  max-width: 450px;
-  padding: 45px 30px;
-  text-align: center;
-}
 
-.message-box-section h3 {
-  font-size: 26px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  margin-bottom: 25px;
-  line-height: 1.38;
-}
-
-.message-box-section p {
-  font-size: 18px;
-  line-height: 1.56;
-  margin: 0;
-  padding-top: 0;
-}
 
 .video-section {
   padding-bottom: 80px;
@@ -138,6 +143,23 @@ ul.tab-bar li a {
 .video-section .wiz {
   z-index: 2;
   position: relative;
+}
+
+.video-section .wiz_video_foam {
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.wiz_video_foam iframe,
+.wiz_video_foam object,
+.wiz_video_foam embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 80%;
 }
 
 .video-section h3 {
