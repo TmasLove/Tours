@@ -291,3 +291,36 @@ height: 80%;
 .cta {
   color: skyblue;
 }
+
+
+
+/* MAYA TOURS */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 5px;
+}
+
+.grid .day {
+  background-color: skyblue;
+  border: 1px solid blue;
+  display: flex;
+  width: 100%;
+}
+
+.details {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+figure img {
+  width: 50%;
+}
+
+figure {
+  order: 2;
+}
