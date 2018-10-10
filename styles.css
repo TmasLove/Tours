@@ -1,7 +1,20 @@
+@media screen and (max-width:400px) {
+  .message-box-section .container {
+    position: relative !important;
+    top: 0 !important;
+}
+}
+
+
+
+
+
+
+
 
 .row {
-    margin-left: -.9375rem;
-    margin-right: -.9375rem;
+  margin-left: -.9375rem;
+  margin-right: -.9375rem;
 }
 
 @font-face {
@@ -13,9 +26,9 @@
 }
 
 .container-fluid::after, .container::after, .row::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .carousel-inner>.carousel-item {
@@ -134,8 +147,6 @@ ul.tab-bar li a {
   flex-direction: column;
 }
 
-
-
 .video-section {
   padding-bottom: 80px;
 }
@@ -152,14 +163,12 @@ ul.tab-bar li a {
   overflow: hidden;
 }
 
-.wiz_video_foam iframe,
-.wiz_video_foam object,
-.wiz_video_foam embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 80%;
+.wiz_video_foam iframe, .wiz_video_foam object, .wiz_video_foam embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
 }
 
 .video-section h3 {
@@ -171,9 +180,9 @@ height: 80%;
 }
 
 .video-button {
-    text-align: center;
-    margin-top: 48px;
-  }
+  text-align: center;
+  margin-top: 48px;
+}
 
 #intro {
   padding-top: 150px;
@@ -192,7 +201,6 @@ height: 80%;
   margin: 0 0 8px;
 }
 
-
 #our-tours {
   padding-bottom: 35px;
 }
@@ -202,7 +210,6 @@ height: 80%;
   padding-bottom: 60px;
 }
 
-
 .bg-grey {
   background: #EFEFEF;
   padding-bottom: 80px;
@@ -211,7 +218,6 @@ height: 80%;
 .card {
   margin-top: 30px;
 }
-
 
 .section {
   padding-top: 120px;
@@ -232,7 +238,6 @@ height: 80%;
 
 .rounded-circle {
   border-radius: 100%;
-
 }
 
 .img-responsive {
@@ -243,8 +248,8 @@ height: 80%;
 }
 
 .team-name {
-    font-size: 3rem;
-    font-family: Dhanikans;
+  font-size: 3rem;
+  font-family: Dhanikans;
 }
 
 .team-role {
@@ -252,7 +257,6 @@ height: 80%;
   color: skyblue;
   padding-left: 20px;
 }
-
 
 .cta-section {
   padding: 80px 0;
@@ -266,23 +270,23 @@ height: 80%;
 }
 
 .cta-section .number {
-    color: #FFF;
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 35px;
-    position: relative;
-    top: 3px;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
+  color: #FFF;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35px;
+  position: relative;
+  top: 3px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .cta-section p {
-    font-size: 1.6rem;
-    line-height: 1.38;
-    margin: 0 0 30px;
-    text-align: center;
-  }
+  font-size: 1.6rem;
+  line-height: 1.38;
+  margin: 0 0 30px;
+  text-align: center;
+}
 
 .cta-section .or {
   padding: 0 10px;
@@ -290,192 +294,4 @@ height: 80%;
 
 .cta {
   color: skyblue;
-}
-
-
-
-/* ----------MAYA TOUR--------- */
-.pic-container {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 0 4px;
-}
-
-/* LIGHTBOX */
-
-.lightbox {
-  flex: 25%;
-  max-width: 100%;
-  padding: 0 4px;
-}
-
-a.lightbox img {
-height: 180px;
-border: 3px solid white;
-box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-margin-top: 8px;
-vertical-align: middle;
-}
-
-/* Styles the lightbox, removes it from sight and adds the fade-in transition */
-
-.lightbox-target {
-position: fixed;
-top: -100%;
-width: 100%;
-background: rgba(0,0,0,.7);
-width: 100%;
-opacity: 0;
--webkit-transition: opacity .5s ease-in-out;
--moz-transition: opacity .5s ease-in-out;
--o-transition: opacity .5s ease-in-out;
-transition: opacity .5s ease-in-out;
-overflow: hidden;
-}
-
-/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
-
-.lightbox-target img {
-margin: auto;
-position: absolute;
-top: 0;
-left:0;
-right:0;
-bottom: 0;
-max-height: 0%;
-max-width: 0%;
-border: 3px solid white;
-box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-box-sizing: border-box;
--webkit-transition: .5s ease-in-out;
--moz-transition: .5s ease-in-out;
--o-transition: .5s ease-in-out;
-transition: .5s ease-in-out;
-}
-
-/* Styles the close link, adds the slide down transition */
-
-a.lightbox-close {
-display: block;
-width:50px;
-height:50px;
-box-sizing: border-box;
-background: white;
-color: black;
-text-decoration: none;
-position: absolute;
-top: -80px;
-right: 0;
--webkit-transition: .5s ease-in-out;
--moz-transition: .5s ease-in-out;
--o-transition: .5s ease-in-out;
-transition: .5s ease-in-out;
-}
-
-/* Provides part of the "X" to eliminate an image from the close link */
-
-a.lightbox-close:before {
-content: "";
-display: block;
-height: 30px;
-width: 1px;
-background: black;
-position: absolute;
-left: 26px;
-top:10px;
--webkit-transform:rotate(45deg);
--moz-transform:rotate(45deg);
--o-transform:rotate(45deg);
-transform:rotate(45deg);
-}
-
-/* Provides part of the "X" to eliminate an image from the close link */
-
-a.lightbox-close:after {
-content: "";
-display: block;
-height: 30px;
-width: 1px;
-background: black;
-position: absolute;
-left: 26px;
-top:10px;
--webkit-transform:rotate(-45deg);
--moz-transform:rotate(-45deg);
--o-transform:rotate(-45deg);
-transform:rotate(-45deg);
-}
-
-/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
-
-.lightbox-target:target {
-opacity: 1;
-top: 0;
-bottom: 0;
-}
-
-.lightbox-target:target img {
-max-height: 100%;
-max-width: 100%;
-}
-
-.lightbox-target:target a.lightbox-close {
-top: 0px;
-}
-
-/* Itineraries */
-.itinerarie-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.content {
-  max-width: 100%;
-  width: 100%;
-  text-align: center;
-}
-
-.content ul {
-  list-style: lower-latin;
-}
-
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
-
-.responsive {
-    max-width: 100%;
-    height: auto;
 }
