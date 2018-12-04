@@ -1,0 +1,244 @@
+
+/* ----------CATARATAS TOUR STYLES--------- */
+
+.pic-container {
+padding: .5vw;
+font-size: 0;
+display: -ms-flexbox;
+-ms-flex-wrap: wrap;
+-ms-flex-direction: column;
+-webkit-flex-flow: row wrap;
+flex-flow: row wrap;
+display: -webkit-box;
+display: flex;
+}
+
+.pic-container a.lightbox {
+ flex: auto;
+ width: 280px;
+ margin: .5vw;
+}
+
+
+a.lightbox img {
+  height: 30vh;
+  border: 3px solid white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, .3);
+  margin-top: 8px;
+  vertical-align: middle;
+  display: block;
+}
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.lightbox-target {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .8);
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+  overflow: hidden;
+}
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox-target img {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 0%;
+  max-width: 0%;
+  border: 3px solid white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, .3);
+  box-sizing: border-box;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+  display: block;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  background: white;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: -80px;
+  right: 0;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top: 10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top: 10px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+}
+
+.lightbox-target:target img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+  top: 0px;
+}
+
+
+
+/* ABOUT */
+
+.about-section {
+  padding:4em 0 5em 0;
+  margin-bottom: 5em;
+  margin-top: 5em;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/cataratas-tour/cataratas.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.about-cataratas {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 4em;
+  height: auto;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Itineraries */
+
+.itinerarie-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content {
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.content ul {
+  list-style: lower-latin;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  width: 50%;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.maya-map {
+  max-width: 100%;
+  max-height: auto;
+  width: 45%;
+  margin-top: 150px;
+}
