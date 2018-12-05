@@ -1,3 +1,4 @@
+
 @media screen only (min-width: 576px) {
   .message-box-section .card-deck {
     top: 0 !important;
@@ -18,7 +19,7 @@
 
 @font-face {
   font-family: Dhanikans;
-  src: url(font.css/Dhanikans.ttf);
+  src: url(../styles/font.css/Dhanikans.ttf);
   font-weight: 400;
   font-style: normal;
   font-display: fallback;
@@ -107,7 +108,7 @@ ul.tab-bar li a {
 
 .message-box-section .card-deck {
   position: relative;
-  top: -50px !important;
+  top: -7px !important;
 }
 
 .message-box-section .card-deck .card {
