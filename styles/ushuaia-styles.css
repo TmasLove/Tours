@@ -122,15 +122,7 @@
   padding-bottom: 40px;
 }
 
-/* .mini-reviews {
-  border-top: #d2d6dd 1px solid;
-  margin-top: 15px;
-}
 
-.trustpilot-widget {
-  margin-top: 20px;
-  max-height: 110px;
-} */
 
 
 
@@ -143,7 +135,9 @@
   padding-top: 60px;
 }
 
-.gallery-block .heading{
+
+
+/* .gallery-block .heading{
     margin-bottom: 50px;
     text-align: center;
 }
@@ -152,13 +146,14 @@
     font-weight: bold;
     font-size: 1.4rem;
     text-transform: uppercase;
-}
+} */
 
 .gallery-block.compact-gallery .item{
   overflow: hidden;
   margin-bottom: 0;
   background: none;
   opacity: 1;
+  max-width: 240px !important;
 }
 
 .gallery-block.compact-gallery .item .image{
@@ -190,7 +185,7 @@
     background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
 }
 
-.gallery-block.compact-gallery .item .description .description-heading{
+/* .gallery-block.compact-gallery .item .description .description-heading{
   font-size: 1em;
   font-weight: bold;
 }
@@ -199,7 +194,7 @@
   font-size: 0.8em;
   margin-top: 10px;
   font-weight: 300;
-}
+} */
 
 @media (min-width: 576px) {
 
@@ -281,7 +276,7 @@
   color: white;
   cursor: pointer;
   padding: 18px;
-  width: 50%;
+  width: 100%;
   border: none;
   text-align: left;
   outline: none;
@@ -311,7 +306,7 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
-  width: 50%;
+  width: 100%;
 }
 
 .responsive {
@@ -319,12 +314,17 @@
   height: auto;
 }
 
-/* .maya-map {
-  max-width: 100%;
+ .tour-map {
   max-height: auto;
-  width: 45%;
-  margin-top: 150px;
-} */
+  width: 100%;
+  padding: 5em;
+}
+
+.tour-map img{
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 6px 10px 19px 2px darkgrey;
+}
 
 .tailormake-holiday {
     background: #1c818d url("https://www.hayesandjarvis.co.uk/profiles/hnj/themes/custom/hnj_theme/assets/images/tailormake_holiday@2x.jpg");
