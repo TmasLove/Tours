@@ -1,6 +1,14 @@
+@media (min-width: 1200px){
+  .col-lg-offset-1 {
+    margin-left: 8.33333%;
+  }
+  .col-lg-4 {
+    width: 33.33333%;
+  }
+}
 
 .jumbotron {
-  background-image: url("http://indietravel.net/wp-content/uploads/2014/03/fce619a8b53d0f0d76fe9443dc3bb453.jpg");
+  background-image: url("https://best-wallpaper.net/wallpaper/2880x1800/1701/Ushuaia-Argentina-city-ships-ports-mountains_2880x1800.jpg");
   background-size: 100% 100%;
   height: 450px;
   max-height: 100%;
@@ -43,80 +51,86 @@
    text-align: right;
  }
 
+#overview {
+  padding-top: 3em;
+  padding-bottom: 5em;
+}
 
+.overview-about {
+  margin-top: 7em;
+}
 
+.lets-talk {
+  margin-top: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 380px;
+  display: flex;
+  align-items: stretch;
+}
 
+.lets-talk .inner-wrapper {
+  width: 100%;
+}
 
- #overview {
-   padding-top: 3em;
-   padding-bottom: 5em;
- }
+.lets-talk>div {
+  background: #fff;
+  border-top: 4px solid #c5b181;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2);
+  padding: 0 20px
+}
 
- .overview-about {
-   margin-top: 7em;
- }
+.lets-talk .avatars {
+  margin: -38px 0 5px;
+  text-align: center;
+}
 
- .lets-talk {
-   margin-top: 140px;
-   margin-left: auto;
-   margin-right: auto;
-   max-width: 380px;
-   display: flex;
-   align-items: stretch;
- }
+.lets-talk .avatar {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: inline-block;
+  height: 70px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 70px;
+}
 
- .lets-talk .inner-wrapper {
-   width: 100%;
- }
+.lets-talk .avatar img {
+  height: auto;
+  max-width: 100%;
+}
 
- .lets-talk>div {
-   background: #fff;
-   border-top: 4px solid #c5b181;
-   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2);
-   padding: 0 20px
- }
+.text-center.inner-wrapper>h3 {
+  display: inline-block;
+  font-size: 12px;
+  color: #777a7d;
+  margin: 0;
+}
 
- .lets-talk .avatars {
-   margin: -38px 0 5px;
-   text-align: center;
- }
+.lets-talk h4 {
+  font-size: 22px;
+}
 
- .lets-talk .avatar {
-   border-radius: 50%;
-   border: 2px solid #fff;
-   display: inline-block;
-   height: 70px;
-   margin: 0 auto;
-   overflow: hidden;
-   width: 70px;
- }
+.or-seperator {
+  letter-spacing: .03em;
+  margin-bottom: 10px;
+  font-size: 10px;
+  color: grey;
+}
 
- .lets-talk .avatar img {
-   height: auto;
-   max-width: 100%;
- }
+.cta {
+  padding-bottom: 40px;
+}
 
- .text-center.inner-wrapper>h3 {
-   display: inline-block;
-   font-size: 12px;
-   color: #777a7d;
-   margin: 0;
- }
+/* .mini-reviews {
+  border-top: #d2d6dd 1px solid;
+  margin-top: 15px;
+}
 
- .lets-talk h4 {
-   font-size: 22px;
- }
-
- .or-seperator {
-   letter-spacing: .03em;
-   margin-bottom: 10px;
-   font-size: 10px;
-   color: grey;
- }
-
- .cta {
-   padding-bottom: 40px;
- }
+.trustpilot-widget {
+  margin-top: 20px;
+  max-height: 110px;
+} */
 
 
 
@@ -208,21 +222,21 @@
 
 /* ABOUT */
 
-.about-section {
+/* .about-section {
   padding:4em 0 5em 0;
   margin-bottom: 5em;
   margin-top: 5em;
   max-width: 100%;
   width: 100%;
   height: 100%;
-  background-image: url("../images/calafate-tour/calafate-bg.jpg");
+  /* background-image: url("../images/calafate-tour/calafate-bg.jpg"); */
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
+/*
 .about-cataratas {
   background-color: rgba(0, 0, 0, 0.7);
   width: 60%;
@@ -231,7 +245,7 @@
   padding: 4em;
   height: auto;
   position: relative;
-}
+} */ */
 
 
 
@@ -305,13 +319,12 @@
   height: auto;
 }
 
-.maya-map {
+/* .maya-map {
   max-width: 100%;
   max-height: auto;
   width: 45%;
   margin-top: 150px;
-}
-
+} */
 
 .tailormake-holiday {
     background: #1c818d url("https://www.hayesandjarvis.co.uk/profiles/hnj/themes/custom/hnj_theme/assets/images/tailormake_holiday@2x.jpg");
@@ -322,21 +335,31 @@
     padding: 70px 52px;
   }
 
-  .tailormake-holiday h2 {
-      margin-bottom: 40px;
-      margin-top: 0;
+  /* .tailormake-columns>div+div::before {
+      content: "";
+      background: #fff;
+      display: block;
+      height: 1px;
+      margin: 30px auto;
+      opacity: .5;
+      width: 60px;
+    } */
+
+.tailormake-holiday h2 {
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+
+  .tailormake-columns>div {
+    padding: 0 105px;
+    position: relative;
     }
 
-    .tailormake-columns>div {
-      padding: 0 105px;
-      position: relative;
-      }
+.tailormake-columns h3{
+  margin-top: 0;
+text-indent: -5px;
+}
 
-  .tailormake-columns h3{
-    margin-top: 0;
-  text-indent: -5px;
-  }
-
-  .tailormake-columns p:last-child {
-      margin-bottom: 0;
-  }
+.tailormake-columns p:last-child {
+    margin-bottom: 0;
+}

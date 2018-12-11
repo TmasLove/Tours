@@ -27,10 +27,85 @@
     </div>
   </nav>
 
-<header>
-  <h1> Calafate </h1>
-</header>
+  <header>
+    <div class="jumbotron">
+      <div class="container">
+        <h1> Calafate </h1>
+      </div>
+    </div>
+  </header>
 
+<div id="destinationHeader-sticky-wrapper" class="sticky-wrapper" style="height: auto;">
+  <div class="destination-header" id=destinationHeader style="width:100%;">
+    <div class="navigation-d">
+      <div class="container">
+        <div class="row">
+          <div class="hidden-xs col-sm-12">
+            <ul class="tab-bar">
+              <li>
+                <a class="" href="#overview"><i class="fa fa-globe" aria-hidden="true"> Overview</i></a>
+              </li>
+              <li>
+                <a class="" href="#gallery"><i class="fa fa-picture-o" aria-hidden="true"> Gallery</i></a>
+              </li>
+              <li>
+                <a class="" href="#itinerary"><i class="fa fa-list" aria-hidden="true"> Itinerary</i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="overview" data-label="Overview">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-7">
+        <div class="overview-about">
+          <div class="container">
+            <h1> About Calafate </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac risus sit amet elit facilisis auctor. Cras venenatis erat suscipit elit auctor, ut elementum urna feugiat. Fusce urna erat, venenatis ac ligula eu, fringilla
+              condimentum elit. Etiam a nisi nec ligula scelerisque euismod eu nec leo. Nulla fermentum velit ut massa accumsan, vitae posuere orci laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec quis libero eros. Duis
+              aliquet tincidunt elit, eu ullamcorper risus fringilla quis. In ultrices ante eros, at hendrerit tellus ullamcorper et. </p>
+            <p> Nulla sapien turpis, pretium et interdum ac, luctus id ex. Nulla bibendum scelerisque diam eget consectetur. Maecenas nulla massa, faucibus posuere felis et, lacinia suscipit magna. Vestibulum eu tempor ex. Donec bibendum nunc mi,
+              sit amet efficitur lorem porttitor ut. Sed pharetra mi neque, id tincidunt lacus lacinia eu. Morbi quis ultricies ligula, id lobortis elit. Proin dignissim tristique felis et faucibus. Sed quis ante odio. Nullam egestas accumsan
+              sagittis. Curabitur ac massa quis tellus sagittis sodales. Nunc ac eleifend eros. Pellentesque eget neque eros. Fusce pulvinar arcu ac quam mollis gravida. Integer nec elit vitae urna eleifend lobortis. Integer malesuada metus vel
+              leo
+              malesuada, lacinia gravida sem interdum. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-5 col-lg-4 col-lg-offset-1">
+        <aside class="lets-talk sticky-sidebar-on">
+          <div class="text-center inner-wrapper">
+            <div class="avatars">
+              <div class="staff-image avatar">
+                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" width="140" height="140">
+              </div>
+            </div>
+            <h3 class="staff-name" style="font-size:16px;"> Alex -</h3>
+            <h3 class="staff-position" style="text-transform:uppercase;"> <strong>Destination Specialist</strong> </h3>
+            <h4> Let's Talk </h4>
+            <p class="cta-description"> There’s no question too small. Start planning your dream trip by talking to our Destination Specialists. </p>
+            <div class="phone"> Call <a href="tel:">1 866-555-3322</a></div>
+            <div class="subtitle" style="font-size:10px;color: #777a7d;text-transform:uppercase;">
+              Call us today from 09:00 until 20:00
+            </div>
+            <div class="or-seperator text-uppercase color-gray">
+              <strong>- OR - </strong>
+            </div>
+            <div class="cta">
+              <a href="contact.html" class="btn btn-primary">Make an Enquiry </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <section class="gallery-block compact-gallery">
@@ -63,12 +138,11 @@
           </span>
         </a>
       </div>
-      <div class="col-md-6 col-lg-4 item zoom-on-hover">
+      <!-- <div class="col-md-6 col-lg-4 item zoom-on-hover">
         <a class="lightbox" href="https://d19lgisewk9l6l.cloudfront.net/wexas/www/images/web/south-america/argentina/patagonia/el-calafate-perito-moreno-los-glaciares-national-park/el-calafate-perito-moreno-los-glaciares-national-park.jpg">
           <img class="img-fluid image" src="https://d19lgisewk9l6l.cloudfront.net/wexas/www/images/web/south-america/argentina/patagonia/el-calafate-perito-moreno-los-glaciares-national-park/el-calafate-perito-moreno-los-glaciares-national-park.jpg">
           <span class="description">
             <span class="description-heading">Lorem Ipsum</span>
-            <!-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> -->
           </span>
         </a>
       </div>
@@ -77,7 +151,6 @@
           <img class="img-fluid image" src="https://www.cascada.travel/sites/default/files/styles/flexslider_full/public/media/PAT094_1.jpg?itok=LQDNhwDE">
           <span class="description">
             <span class="description-heading">Lorem Ipsum</span>
-            <!-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> -->
           </span>
         </a>
       </div>
@@ -86,7 +159,6 @@
           <img class="img-fluid image" src="https://cache-graphicslib.viator.com/graphicslib/thumbs674x446/6049/SITours/excursion-d-une-journ-e-aux-glaciers-de-viedma-et-d-el-chalten-au-d-in-el-calafate-141806.jpg">
           <span class="description">
             <span class="description-heading">Lorem Ipsum</span>
-            <!-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> -->
           </span>
         </a>
       </div>
@@ -95,7 +167,6 @@
           <img class="img-fluid image" src="">
           <span class="description">
             <span class="description-heading">Lorem Ipsum</span>
-            <!-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> -->
           </span>
         </a>
       </div>
@@ -104,7 +175,6 @@
           <img class="img-fluid image" src="">
           <span class="description">
             <span class="description-heading">Lorem Ipsum</span>
-            <!-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> -->
           </span>
         </a>
       </div>
@@ -113,31 +183,40 @@
           <img class="img-fluid image" src="">
           <span class="description">
             <span class="description-heading">Lorem Ipsum</span>
-            <!-- <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> -->
           </span>
         </a>
-      </div>
+      </div> -->
     </div>
 </section>
 
 
 
+<section >
+  <div class="tailormake-holiday text-center">
+  <div class="container-fluid">
+    <h2> How we Tailor make your Tour </h2>
+  </div>
+  <div class="row tailormake-columns">
+    <div class="col-xs-12 col-sm-4">
+      <h3>1. Browse</h3>
+      <p>Look through our website for inspiration, then call our Destination Specialists</p>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <h3>2. Create</h3>
+      <p>We'll listen to your wish-list and use our knowledge to design a unique itinerary</p>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <h3>3.Customize</h3>
+      <p>We'll keep on refining until we've created your perfect personalised holiday</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="tailormake-footer text-center">
+    <p>
+      <strong><span style="font-size: 12px; line-height: 1.5em; background-color: transparent;">Talk to our experts</span></strong>
+    </p>
+    <p><a class="" href="tel:1 8665553322" style="color:#fff;">1 866-555-3322</a></p>
 
-<section class="about-section">
-<div class="about-cataratas">
-  <div class="container">
-    <div class="row justify-content-md-center">
-      <div class="col-sm-8">
-        <h2 style="text-align:center;color:white;"> About Calafate </h2><br>
-      </div>
-    </div>
-    <div class="row justify-content-md-center">
-      <div class="col-md-8">
-        <p style="color:white;max-width:100%;"> A city in Patagonia, Argentina. It is situated on the southern border of Lake Argentino, in the southwest part of the Santa Cruz Province, about 320 km Northwest of Río Gallegos. The name of the city is derived from a little bush with yellow flowers and dark blue berries that is very common in Patagonia.
-        </p>
-        <p style="color:white;max-width:100%;"> In this guided tour, you will explore El Calafate through a <span style="font-style:bold;">4 day</span> guide. Check out the daily itineraries below.</p>
-      </div>
-    </div>
   </div>
 </div>
 </section>
@@ -154,7 +233,7 @@
     <img src="https://www.helsingfors.com.ar/images/attractions/Los-Glaciares-Map_National-Park.jpg" class="maya-map" width="" height="350" align="right">
   </div>
 
-  <h2 style="text-align:center;padding-bottom:2em;">Daily Itineraries</h2>
+  <h2 style="text-align:center;padding-bottom:2em;">Itinerary Breakdown</h2>
   <button class="collapsible">Open Day 1</button>
   <div class="content">
     <h6> Day 1 Activities </h6>
